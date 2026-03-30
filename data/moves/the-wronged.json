@@ -1,0 +1,184 @@
+[
+  {
+    "id": "w5",
+    "title": "👪 Who You Lost",
+    "weight": -3,
+    "hideCheckbox": true,
+    "description": "Who did you lose? Pick one or more:",
+    "pick": [
+      "Your parent(s): __wparent:Name__",
+      "Your sibling(s): __wsibling:Name__",
+      "Your spouse/partner: __wpartner:Name__",
+      "Your child(ren): __wchild:Name__",
+      "Your best friend(s): __wfriend:Name__"
+    ]
+  },
+  {
+    "id": "w6",
+    "title": "💔 What Did It & Why",
+    "weight": -3,
+    "hideCheckbox": true,
+    "description": "What did it? With the Keeper's agreement, pick the monster breed.\n\nMy prey: __wprey:Monster Breed__\n\nWhy couldn't you save them? You were (pick one or more):",
+    "pick": [
+      "At fault",
+      "Selfish",
+      "Injured",
+      "Weak",
+      "Slow",
+      "Scared",
+      "In denial",
+      "Complicit"
+    ]
+  },
+  {
+    "id": "w1",
+    "title": "I Know My Prey",
+    "weight": -2,
+    "description": "You get +1 ongoing when knowingly investigating, pursuing or fighting the breed of monster that caused your loss.",
+    "submoves": [
+      {
+        "title": "Starting Moves",
+        "description": "You get this move and 2 others of your choice below"
+      }
+    ]
+  },
+  {
+    "id": "w7",
+    "title": "Berserk",
+    "description": "No matter how much harm you take, you can always keep going until the current fight is over. During a fight, the Keeper may not use harm moves on you and you cannot die. When the fight ends, all harm takes effect as normal."
+  },
+  {
+    "id": "w8",
+    "title": "NEVER AGAIN",
+    "description": "In combat, you may choose to **protect someone** without rolling, as if you had rolled a 10+, but you may not choose to \"suffer little harm.\""
+  },
+  {
+    "id": "w9",
+    "title": "What Does Not Kill Me...",
+    "description": "If you have suffered harm in a fight, you gain +1 ongoing until the fight is over."
+  },
+  {
+    "id": "w10",
+    "title": "Fervor",
+    "description": "When you **manipulate someone**, roll +Tough instead of +Charm."
+  },
+  {
+    "id": "w11",
+    "title": "Safety First",
+    "description": "You have jury-rigged extra protection into your gear, giving you +1 armour (maximum 2-armour)."
+  },
+  {
+    "id": "w12",
+    "title": "DIY Surgery (+Cool)",
+    "description": "When you do quick and dirty first aid on someone (including yourself), roll +Cool.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "It's all good, it counts as normal first aid, plus stabilize the injury and heal 1 harm."
+      },
+      {
+        "range": "7-9",
+        "text": "It counts as normal first aid, plus one of these, your choice:",
+        "bullets": [
+          "Stabilise the injury but the patient takes -1 forward.",
+          "Heal 1-harm and stabilise for now, but it will return as 2-harm and become unstable again later.",
+          "Heal 1-harm and stabilise but the patient takes -1 ongoing until it's fixed properly."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "w13",
+    "title": "Tools Matter",
+    "description": "With your signature weapon (see your gear, below), you get +1 to **kick some ass**."
+  },
+  {
+    "id": "w2",
+    "title": "Gear",
+    "description": "Pick one signature weapon and two practical weapons.\n\nYou have protective wear, suited to your look, worth 1-armour.\n\nIf you want, you may take a classic car, classic motorcycle, plain pickup, or plain van.",
+    "weight": -1,
+    "hideCheckbox": true,
+    "details": true,
+    "submoves": [
+      {
+        "title": "Signature Weapon",
+        "pickOne": [
+          "Sawn-off shotgun (3-harm hand/close messy loud reload)",
+          "Hand cannon (3-harm close loud)",
+          "Fighting knife (2-harm hand quiet)",
+          "Huge sword or huge axe (3-harm hand messy heavy)",
+          "Specialist weapons for destroying your foes (e.g. wooden stakes and mallet for vampires, silver dagger for werewolves, etc.). 4-harm against the specific creatures it targets, 1-harm otherwise, and other tags by agreement with the Keeper.",
+          "Enchanted dagger (2-harm hand magic)",
+          "Chainsaw (3-harm hand messy unreliable loud heavy)"
+        ]
+      },
+      {
+        "title": "Practical Weapons",
+        "description": "Pick two", 
+        "pick": [
+          ".38 revolver (2-harm close reload loud)",
+          "9mm (2-harm close loud)",
+          "Hunting rifle (2-harm far loud)",
+          "Shotgun (3-harm close messy loud)",
+          "Big knife (1-harm hand)",
+          "Brass knuckles (1-harm hand stealthy)",
+          "Assault rifle (3-harm close area loud reload)"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "wi",
+    "title": "Improvement",
+    "hideCheckbox": true,
+    "category": "Improvement",
+    "description": "When you have filled all five experience boxes, you level up. Erase the marks and pick from below.",
+    "pick": [
+      "Get +1 Tough (Max +3)",
+      "Get +1 Cool (Max +2)",
+      "Get +1 Sharp (Max +2)",
+      "Get +1 Weird (Max +2)",
+      "Take another Wronged move",
+      "Take another Wronged move",
+      "Gain a haven, like the Expert has, with two options",
+      "Add one more option to your haven",
+      "Take a move from another playbook",
+      "Take a move from another playbook"
+    ],
+    "details": true
+  },
+  {
+    "id": "wai",
+    "title": "Advanced Improvements",
+    "hideCheckbox": true,
+    "category": "Improvement",
+    "description": "After you have leveled up *five* times, you additionally qualify for advanced improvements.",
+    "pick": [
+      "Get +1 to any rating (Max +3)",
+      "Change this hunter to a new type",
+      "Create a second hunter to play as well as this one",
+      "Mark two of the basic moves as advanced",
+      "Mark another two of the basic moves as advanced",
+      "Retire this hunter to safety",
+      "You track down the specific monster(s) responsible for your loss. The Keeper must make the next mystery about them",
+      "Change the target of your vengeful rage. Pick a new monster breed: I know my prey now applies to them instead",
+      "Get back one used Luck point"
+    ],
+    "details": true,
+    "submoves": [
+      {
+        "title": "Advanced Moves",
+        "pick": [
+          "Kick Some Ass",
+          "Act Under Pressure",
+          "Help Out",
+          "Investigate A Mystery",
+          "Manipulate Someone",
+          "Protect Someone",
+          "Read A Bad Situation",
+          "Use Magic"
+        ]
+      }
+    ]
+  }
+]

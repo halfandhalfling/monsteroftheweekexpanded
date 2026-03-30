@@ -1,0 +1,173 @@
+[
+  {
+    "id": "ss3",
+    "title": "🔮 Combat Magic",
+    "weight": -3,
+    "hideCheckbox": true,
+    "description": "You have a few attack spells you can use as weapons. When you use these spells to **kick some ass**, roll +Weird instead of +Tough. Sometimes the situation may require you to **act under pressure** to cast your spell without problems.\n\nYour combat spells can combine any of your base spells with any of your effects.\n\nPick three (with at least one base):",
+    "pick": [
+      "Base: Blast (2-harm magic close obvious loud)",
+      "Base: Ball (1-harm magic area close obvious loud)",
+      "Base: Missile (1-harm magic far obvious loud)",
+      "Base: Wall (1-harm magic barrier close 1-armour obvious loud)",
+      "Effect: Fire - Add \"+2 harm fire\" to a base. If you get a 10+ on a combat magic roll, the fire won't spread.",
+      "Effect: Force or Wind - Add \"+1 harm forceful\" to a base, or \"+1 armour\" to a wall.",
+      "Effect: Lightning or Entropy - Add \"+1 harm messy\" to a base.",
+      "Effect: Frost or Ice - Adds \"-1 harm +2 armour\" to a wall, or \"+1 harm restraining\" to other bases.",
+      "Effect: Earth - Add \"forceful restraining\" to a base.",
+      "Effect: Necromantic - Add \"life-drain\" to a base."
+    ]
+  },
+  {
+    "id": "ss1",
+    "title": "Advanced Arcane Training",
+    "description": "If you have two of your three Tools and Techniques at the ready, you may ignore the third one."
+  },
+  {
+    "id": "ss5",
+    "title": "Arcane Reputation",
+    "description": "Pick three big organizations or groups in the supernatural community, which can include some of the more sociable types of monsters. They've heard of you and respect your power. With affected humans, take +1 forward when you **manipulate** them. You may **manipulate** affected monsters as if they were human, with no bonus.",
+    "details": true
+  },
+  {
+    "id": "ss6",
+    "title": "Could've Been Worse",
+    "description": "When you miss a **use magic** roll you can choose one of the following options instead of losing control of the magic:",
+    "pick": [
+      "**Fizzle:** The preparations and materials for the spell are ruined. You'll have to start over from scratch with the prep time doubled.",
+      "**This Is Gonna Suck:** The effect happens, but you trigger all of the listed glitches but one. You pick the one you avoid."
+    ]
+  },
+  {
+    "id": "ss7",
+    "title": "Enchanted Clothing",
+    "description": "Pick an article of every-day clothing–it's enchanted without any change in appearance. Take -1 harm from any source that tries to get at you through the garment.",
+    "details": true
+  },
+  {
+    "id": "ss8",
+    "title": "Forensic Divination",
+    "description": "When you successfully **investigate a mystery**, you may ask \"What magic was done here?\" as a free extra question."
+  },
+  {
+    "id": "ss9",
+    "title": "Go Big or Go Home",
+    "description": "When you must **use magic** as a requirement for Big Magic, take +1 ongoing to those **use magic** rolls."
+  },
+  {
+    "id": "ss10",
+    "title": "Not My Fault",
+    "description": "+1 to **act under pressure** when you are dealing with the consequences of your own spellcasting."
+  },
+  {
+    "id": "ss11",
+    "title": "Practitioner",
+    "description": "Choose two effects available to you under **use magic**. Take +1 to **use magic** whenever you choose one of those effects.",
+    "pick":[
+      "Inflict harm",
+      "Enchant a weapon",
+      "Do one thing that is beyond human limitations.",
+      "Bar a place or portal to a specific person or a type of creature.",
+      "Trap a specific person, minion, or monster.",
+      "Banish a spirit or curse from the person, object, or place it inhabits.",
+      "Summon a monster into the world.",
+      "Communicate with something that you do not share a language with.",
+      "Observe another place or time.",
+      "Heal"
+    ]
+  },
+  {
+    "id": "ss12",
+    "title": "Shield Spell",
+    "description": "When you **protect someone**, gain 2-armour against any harm that is transferred to you. This doesn't stack with your other armour, if any."
+  },
+  {
+    "id": "ss13",
+    "title": "Third Eye",
+    "description": "When you **read a bad situation**, you can open up your third eye for a moment to take in extra information. Take +1 hold on any result of 7 or more, plus you can see invisible things. On a miss, you may still get 1 hold, but you're exposed to supernatural danger. Unfiltered hidden reality is rough on the mind!"
+  },
+  {
+    "id": "ss2",
+    "title": "Gear",
+    "description": "You don't need much—aside from any foci or consumables to power your magic. Still, it's good to carry some backup. Pick one:",
+    "weight": -1,
+    "hideCheckbox": true,
+    "pickOne": [
+      "Old revolver (2-harm close reload loud)",
+      "Ritual knife (1-harm hand)",
+      "Heirloom sword (2-harm hand messy)"
+    ]
+  },
+  {
+    "id":"ss4",
+    "weight": -2,
+    "title": "🪄 Tools and Techniques",
+    "hideCheckbox": true,
+    "description":"To use your combat magic effectively, you rely on a collection of tools and techniques. Mark 3 out of the 4 below (you'll need them all)",
+    "pick": [
+      "Consumables: You need certain supplies— powders, oils, etc—on hand, some will be used up each cast. If you don’t have them, take 1-harm ignore-armour when you cast.",
+      "Foci: You need wands, staves, and other obvious props to focus. If you don’t have what you need, your combat magic does 1 less harm.",
+      "Gestures: You need to wave your hands around to use combat magic. If you’re restrained, take -1 ongoing for combat magic.",
+      "Incantations: You must speak in an arcane language to control your magic. If you use combat magic without speaking, **act under pressure** to avoid scrambling your thoughts."
+    ],
+    "submoves": [
+      {
+        "title": "Starting Moves",
+        "description": "You get this move plus 3 more"
+      }
+    ]
+  },
+  {
+    "id": "ssi",
+    "title": "Improvement",
+    "hideCheckbox": true,
+    "category": "Improvement",
+    "description": "When you have filled all five experience boxes, you level up. Erase the marks and pick from below.",
+    "pick": [
+      "Get +1 Weird (Max +3)",
+      "Get +1 Cool (Max +2)",
+      "Get +1 Sharp (Max +2)",
+      "Get +1 Tough (Max +2)",
+      "Take another Spell-Slinger move",
+      "Take another Spell-Slinger move",
+      "Take a move from another playbook",
+      "Take a move from another playbook",
+      "Take another Combat Magic pick"
+    ],
+    "details": true
+  },
+  {
+    "id": "ssai",
+    "title": "Advanced Improvements",
+    "hideCheckbox": true,
+    "category": "Improvement",
+    "description": "After you have leveled up *five* times, you additionally qualify for advanced improvements.",
+    "pick": [
+      "Get +1 to any rating (Max +3)",
+      "Change this hunter to a new type",
+      "Create a second hunter to play as well as this one",
+      "Mark two of the basic moves as advanced",
+      "Mark another two of the basic moves as advanced",
+      "Retire this hunter to safety",
+      "Erase one used Luck mark from your playbook",
+      "Take another Combat Magic pick",
+      "You may cross off another option from your Tools and Techniques"
+    ],
+    "details": true,
+    "submoves": [
+      {
+        "title": "Advanced Moves",
+        "pick": [
+          "Kick Some Ass",
+          "Act Under Pressure",
+          "Help Out",
+          "Investigate A Mystery",
+          "Manipulate Someone",
+          "Protect Someone",
+          "Read A Bad Situation",
+          "Use Magic"
+        ]
+      }
+    ]
+  }
+]

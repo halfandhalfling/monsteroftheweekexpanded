@@ -120,6 +120,30 @@
     "fai": true,
     "fsh":false
   },
+   "The Gumshoe":{
+    "_movesFile": "data/moves/the-gumshoe.json",
+    "description": "'You won’t understand this... When I take a case, I’m supposed to do something about it. You’re supposed to do something about it whether you like it or not. You’ve got to pay for what you’ve done, sweetheart, whatever it is I might feel about you. Yes, I’ll have some bad nights, but I’ll still have myself.'",
+    "statDistributions": [
+      "Charm+2, Cool=0, Sharp+1, Tough=0, Weird=0",
+      "Charm+2, Cool=0, Sharp+1, Tough+1, Weird–1",
+      "Charm+1, Cool=0, Sharp+2, Tough+1, Weird–1",
+      "Charm+1, Cool–1, Sharp+2, Tough=0, Weird=+1",
+      "Charm+2, Cool+1, Sharp+1, Tough=0, Weird–1"
+    ],
+    "luckSpecial":"When you use a point of Luck your next regular case will actually be a mystery for your hunter group, not a regular case at all (and the monster will focus its attention on you!)",
+    "gum1": true,
+    "gum2": true,
+    "gum3": true,
+    "gum4": false,
+    "gum5": false,
+    "gum6": false,
+    "gum7": false,
+    "gum8": false,
+    "gum9": false,
+    "gum10": false,
+    "gumi": true,
+    "gumai": true
+  },
   "The Initiate":{
     "_movesFile": "data/moves/the-initiate.json",
     "description": "Since the dawn of history, we have been the bulwark against Darkness. We know the Evils of the world, and we stand against them so that the mass of humanity need not fear. We are the Flame that cleanses the Shadows.",

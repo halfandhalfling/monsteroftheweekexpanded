@@ -1,0 +1,200 @@
+[
+  {
+    "id": "gum1",
+    "title": "Gumshoe Code",
+    "weight": -2,
+    "hideCheckbox": true,
+    "description": "With the agreement of the Keeper, pick a one-sentence Code that your Gumshoe adheres to. This Code defines your Gumshoe. Any time you violate your code you forfeit all Code related moves (The Postman Always Rings Twice, The Long Goodbye) and the ability to spend Luck points. These forfeits last either until the next mystery or you make amends (whichever comes first). As long as you follow the Code people will sense your sincerity: you receive +1 ongoing for manipulate someone and you may not be possessed or charmed by any sort of supernatural, alien, or demonic entity or item.",
+    "details": true
+  },
+  {
+    "submoves": [{
+      "title": "Starting Moves",
+      "description": "You get all the basic moves, plus three Gumshoe moves. You get these two:"
+    }]
+  },
+  {
+    "id": "gum2",
+    "title": "Occult Confidential",
+    "description": "The first time in each mystery that you observe a monster, minion, or phenomenon in action, you may ask one question from the investigate a mystery list."
+  },
+  {
+    "id": "gum3",
+    "title": "The Naked City",
+    "description": "You have lots of personal contacts wherever you go. Pick four contact types. You can hit them up for info (+1 to one investigate a mystery roll) or small favours—but there may be a small cost involved. Personal contacts can provide more significant help but the Keeper decides their price on a case-by-case basis.",
+    "details": true
+  },
+  {
+    "id": "gum4",
+    "title": "The Postman Always Rings Twice",
+    "description": "Twice per mystery—as long as you follow your Code—you may reroll a roll."
+  },
+  {
+    "id": "gum5",
+    "title": "The Long Goodbye",
+    "description": "You can't die with an open case (usually your current mystery). Specifically, you suffer all harm as normal but your death is postponed until you have either completed or abandoned the case, or you break your Code (then all bets are off).",
+  },
+  {
+    "id": "gum6",
+    "title": "Jessica Jones Entry"
+    "description": "When you double-talk your way into a secure location, roll +Charm.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "pick three:",
+        "bullets": [
+          "You don't leave any trace of what you searched.",
+          "You find something you wanted.",
+          "You find something else that's important.",
+          "You don't piss anyone off.",
+          "You aren't recognized."
+        ]
+      },
+      {
+        "range": "7-9",
+        "text": "pick two"
+      },
+      {
+        "range": "≤ 6",
+        "text": "only pick one"
+      }
+    ]
+      },
+  {
+    "id": "gum7",
+    "title": "Out of the Past",
+    "description": "You have a police buddy who will do you big favors. Get in touch with them when you need to redirect law enforcement attention, get a heads-up on what operations are planned, or access police files. You now owe them: expect them to collect on it soon.",
+  },
+  {
+    "id": "gum8",
+    "title": "Asphalt Jungle",
+    "description": "You heal faster than normal people. Any time your harm gets healed, heal an extra point. You are immune to all the harm move effects under ‘0-harm’ and ‘1-harm’ (when the Keeper would apply these, you ignore it).",
+  },
+  {
+    "id": "gum9",
+    "title": "Hacker with the Dragon Tattoo",
+    "description": "When you hack into a computer system, roll +Sharp."
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "pick two",
+        "bullets": [
+          "You leave no traces.",
+          "You learn something important.",
+          "You can leave misinformation in place.",
+          "You gain access to somewhere you want to get in to."
+        ]
+      },
+      {
+        "range": "7-9"
+        "text": "pick one"
+      }
+    ]
+      },
+  {
+    "id": "gum10",
+    "title": "'Just One More Thing...'",
+    "description": "When you ask a suspect leading questions, roll +Charm.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "pick two",
+        "bullets": [
+          "One question from the investigate a mystery list.",
+          "Was that a lie?",
+          "What is something you left out that you didn’t want me to notice?",
+          "Are you complicit with any ongoing criminal activity?",
+          "Did you commit this specific crime?"
+        ]
+      }
+      {
+      "id": "gumg",
+      "title": "Gear",
+      "description": "You get a laptop, a liquor flask, two recording devices, and one P.I. weapon.",
+      "weight": -1,
+      "hideCheckbox": true,
+      "submoves": [
+        {
+          "title": "Recording Devices",
+          "description": "Pick Two:",
+          "pick": [
+            "Night vision camera",
+            "Tiny digital video camera",
+            "Film camera (8mm or 16mm)",
+            "Digital sound recorder",
+            "Casette tape recorder",
+            "Remote-controlled camera drone",
+            "Laser microphone",
+            "SLR camera"
+          ]
+        },
+        {
+          "title": "P.I. Weapons",
+          "description": "Pick One:",
+          "pickOne": [
+            "Brass Knuckles (1-harm hand small)",
+            ".38 revolver (2-harm close reload loud)",
+            "9mm (2-harm close loud)",
+            "Magnum (3-harm close reload loud)",
+            "Shotgun (3-harm close messy loud)",
+            "Switchblade (1-harm hand small)"
+          ]
+        }
+      ]
+        },
+      {
+        "id": "gumi", 
+        "title": "Improvement",
+        "hideCheckbox": true,
+        "category": "Improvement",
+        "description": "When you have filled all five experience boxes, you level up. Erase the marks and pick from below.",
+        "hideCheckbox": true,
+        "pick": [
+          "Get +1 Charm, max +3",
+          "Get +1 Cool, max +2",
+          "Get +1 Sharp, max +3",
+          "Get +1 Tough, max +2",
+          "Take another Gumshoe move.",
+          "Take another Gumshoe move.",
+          "Add another harm box to your track, before Dying.",
+          "Get a haven (your office, perhaps), like the Expert has, with two options.",
+          "Add four additional or new contacts for your Naked City move."
+        ],
+        "details": true
+      }
+      {
+        "id": "gumai",
+        "title": "Advanced Improvements",
+        "hideCheckbox": true,
+        "category": "Improvement",
+        "description": "After you have leveled up *five* times, you additionally qualify for advanced improvements.",
+        "hideCheckbox": true,
+      "pick": [
+        "Get +1 to any rating (Max +3)",
+        "Change this hunter to a new type",
+        "Create a second hunter to play as well as this one",
+        "Mark two of the basic moves as advanced",
+        "Mark another two of the basic moves as advanced",
+        "Retire this hunter to safety",
+        "Turn one of your contacts into an ally.",
+        "Get back one used Luck point"
+      ],
+      "details": true,
+      "submoves": [
+      {
+        "title": "Advanced Moves",
+        "pick": [
+          "Kick Some Ass",
+          "Act Under Pressure",
+          "Help Out",
+          "Investigate A Mystery",
+          "Manipulate Someone",
+          "Protect Someone",
+          "Read A Bad Situation",
+          "Use Magic"
+        ]
+      }
+      ]
+        }
+    ]
+          

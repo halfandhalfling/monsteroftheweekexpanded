@@ -1,0 +1,228 @@
+[
+  {
+    "id": "m1",
+    "title": "Immortal",
+    "description": "You do not age or sicken, and whenever you suffer harm you suffer 1-harm less."
+  },
+  {
+    "id": "m3",
+    "title": "Unnatural Appeal",
+    "description": "Roll +Weird instead of +Charm when you **manipulate someone**."
+  },
+  {
+    "id": "m4",
+    "title": "Unholy Strength",
+    "description": "Roll +Weird instead of +Tough when you **kick some ass**."
+  },
+  {
+    "id": "m5",
+    "title": "Incorporeal",
+    "description": "You may move freely through solid objects (but not people)."
+  },
+  {
+    "id": "m6",
+    "title": "Preternatural Speed",
+    "description": "You go much faster than normal people. When you chase, flee, or run take +1 ongoing."
+  },
+  {
+    "id": "m7",
+    "title": "Claws of the Beast",
+    "description": "All your natural attacks get +1 harm."
+  },
+  {
+    "id": "m8",
+    "title": "Mental Dominion (+Charm)",
+    "description": "When you gaze into a normal human's eyes and exert your will over them, roll +Charm.",
+    "tracks": [
+      {
+        "name": "Hold",
+        "max": 3,
+        "shape": "square"
+      }
+    ],
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "Hold 3. You may spend your hold to give them an order. Regular people will follow your order, whatever it is. Hunters can choose whether they do it or not. If they do, they mark experience."
+      },
+      {
+        "range": "7-9",
+        "text": "Hold 1."
+      }
+    ]
+  },
+  {
+    "id": "m9",
+    "title": "Unquenchable Vitality (+Cool)",
+    "description": "When you have taken harm, you can heal yourself. Roll +Cool.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "Heal 2-harm and stabilise your injuries."
+      },
+      {
+        "range": "7-9",
+        "text": "Heal 1-harm and stabilise your injuries."
+      },
+      {
+        "range": "≤ 6",
+        "text": "Your injuries worsen."
+      }
+    ]
+  },
+  {
+    "id": "m10",
+    "title": "Dark Negotiator",
+    "description": "You can use the **manipulate someone** move on monsters as well as people, if they can reason and talk."
+  },
+  {
+    "id": "m11",
+    "title": "Flight",
+    "description": "You can fly."
+  },
+  {
+    "id": "m12",
+    "title": "Shapeshifter",
+    "description": "You may change your form (usually into an animal). Decide if you have just one alternate form or several, and detail them. You gain +1 to **investigate a mystery** when using an alternate form's superior senses (e.g. smell for a wolf, sight for an eagle).",
+    "details": true
+  },
+  {
+    "id": "m13",
+    "title": "Something Borrowed",
+    "description": "Take a move from a hunter playbook that is not currently in play.",
+    "takeFrom": ["*"]
+  },
+  {
+    "id":"mb",
+    "title": "🧟 Monster Breed",
+    "hideCheckbox": true,
+    "weight": -3,
+    "description": "You’re half-human, half-monster: decide if you were always this way or if you you were originally human and transformed somehow.\n\nNow decide if you were always fighting to be good, or if you were evil and changed sides.\n\nDefine your monstrous breed by picking a curse, moves, and natural attacks.\n\n Create the monster you want to be: whatever you choose defines your breed in the game.",
+    "takeFrom": [
+      "Curses"
+    ]
+  },
+  {
+    "id":"cur1",
+    "title": "Feed",
+    "hideCheckbox": true,
+    "description": "You must subsist on living humans—it might take the form of blood, brains, or spiritual essence but it must be from people. You need to **act under pressure** to resist feeding whenever a perfect  opportunity presents itself.",
+    "details": true
+  },
+  {
+    "id":"cur2",
+    "title": "Vulnerability",
+    "hideCheckbox": true,
+    "description": " Pick a substance. You suffer +1 harm when you suffer harm from it. If you are bound or surrounded by it, you must **act under pressure** to use your powers",
+    "details": true
+  },
+  {
+    "id":"cur3",
+    "title": "Pure Drive",
+    "hideCheckbox": true,
+    "description": "One emotion rules you.  Whenever you have a chance to indulge that emotion, you must do so  immediately, or **act under pressure** to resist.",
+    "pickOne": [
+      "hunger", "hate", "anger","fear","jealousy", "greed", "joy", "pride","envy", "lust", "cruelty"
+    ]
+  },
+  {
+    "id":"cur4",
+    "title": "Dark Master",
+    "hideCheckbox": true,
+    "description": "You have an evil lord who doesn’t know you changed sides. They still give you orders, and they do not tolerate refusal. Or failure.",
+    "details": true
+  },
+  {
+    "id": "cn",
+    "title":"🐾 Natural Attacks",
+    "description": "Pick a Base and add an extra to it, or two Bases",
+    "weight": -2,
+    "hideCheckbox": true,
+    "pick": [
+        "Base: teeth (3-harm intimate)",
+        "Base: claws (2-harm hand)",
+        "Base: magical force (1-harm magical close)",
+        "Base: life-drain (1-harm intimate life-drain)",
+        "Extra: Add +1 harm to a base",
+        "Extra: Add ignore-armour to a base",
+        "Extra: Add an extra range to a base __range:intimate, hand, or close__."
+    ]
+  },
+  {
+    "id": "m2",
+    "title": "Gear",
+    "description": "If you want, you can take one handy weapon:",
+    "weight": -1,
+    "hideCheckbox": true,
+    "pickOne": [
+      ".38 revolver (2-harm close reload loud)",
+      "9mm (2-harm close loud)",
+      "Magnum (3-harm close reload loud)",
+      "Shotgun (3-harm close messy)",
+      "Big knife (1-harm hand)",
+      "Brass knuckles (1-harm hand quiet small)",
+      "Sword (2-harm hand messy)",
+      "Huge sword (3-harm hand heavy)"
+    ]
+  },
+  {
+    "id": "mi",
+    "title": "Improvement",
+    "hideCheckbox": true,
+    "category": "Improvement",
+    "description": "When you have filled all five experience boxes, you level up. Erase the marks and pick from below.",
+    "pick": [
+      "Get +1 Charm (Max +2)",
+      "Get +1 Cool (Max +2)",
+      "Get +1 Sharp (Max +2)",
+      "Get +1 Tough (Max +2)",
+      "Take another Monstrous move",
+      "Take another Monstrous move",
+      "Gain a haven, like the Expert has, with two options",
+      "Take a natural attacks pick",
+      "Take a move from another playbook",
+      "Take a move from another playbook"
+    ],
+    "details": true,
+    "submoves": [
+      {
+        "title": "Starting Moves",
+        "description": "Choose two Monstrous Moves"
+      }
+    ]
+  },
+  {
+    "id": "mai",
+    "title": "Advanced Improvements",
+    "hideCheckbox": true,
+    "category": "Improvement",
+    "description": "After you have leveled up *five* times, you additionally qualify for advanced improvements.",
+    "pick": [
+      "Get +1 to any rating (Max +3)",
+      "Change this hunter to a new type",
+      "Create a second hunter to play as well as this one",
+      "Mark two of the basic moves as advanced",
+      "Mark another two of the basic moves as advanced",
+      "Retire this hunter to safety",
+      "Free yourself from the curse of your kind. Your curse no longer applies, but you lose 1 Weird",
+      "You turn evil (again). Retire this character, they become one of the Keeper's threats",
+      "Get back one used Luck point"
+    ],
+    "details": true,
+    "submoves": [
+      {
+        "title": "Advanced Moves",
+        "pick": [
+          "Kick Some Ass",
+          "Act Under Pressure",
+          "Help Out",
+          "Investigate A Mystery",
+          "Manipulate Someone",
+          "Protect Someone",
+          "Read A Bad Situation",
+          "Use Magic"
+        ]
+      }
+    ]
+  }
+]

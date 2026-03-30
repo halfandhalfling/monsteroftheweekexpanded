@@ -1,0 +1,273 @@
+[
+  {
+    "id": "p12",
+    "title": "Agency",
+    "weight": -3,
+    "hideCheckbox": true,
+    "description": "Decide who it is you work for. Are they a black-budget government department, a secret military unit, a clandestine police team, a private individual's crusade, a corporation, a scientific team, or what?\n\nIs the Agency's goal to: destroy monsters, study the supernatural, protect people, gain power, or something else?",
+    "details": true
+  },
+  {
+    "id": "p13",
+    "title": "Agency - Resources",
+    "weight": -3,
+    "hideCheckbox": true,
+    "description": "Pick two resource tags for the Agency:",
+    "pick": [
+      "Well-armed",
+      "Well-financed",
+      "Rigorous training",
+      "Official pull",
+      "Cover identities",
+      "Offices all over",
+      "Good intel",
+      "Recognised authority",
+      "Weird tech gadgets",
+      "Support teams"
+    ]
+  },
+  {
+    "id": "p14",
+    "title": "Agency - Red Tape",
+    "weight": -3,
+    "hideCheckbox": true,
+    "description": "Pick two red tape tags:",
+    "pick": [
+      "Dubious motives",
+      "Bureaucratic",
+      "Secretive hierarchy",
+      "Cryptic missions",
+      "Hostile superiors",
+      "Inter-departmental rivalry",
+      "Budget cuts",
+      "Take no prisoners policy",
+      "Live capture policy"
+    ]
+  },
+  {
+    "id": "p11",
+    "title": "Deal with the Agency (+Sharp)",
+    "weight": -2,
+    "hideCheckbox": true,
+    "description": "When you deal with the Agency, requesting help or gear, or making excuses for a failure, roll +Sharp.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "You're good—your request for gear or personnel is okayed, or your slip-up goes unnoticed."
+      },
+      {
+        "range": "7-9",
+        "text": "Things aren't so great. You might get chewed out by your superiors and there'll be fallout, but you get what you need for the job."
+      },
+      {
+        "range": "≤ 6",
+        "text": "You screwed up: you might be suspended or under investigation, or just in the doghouse. You certainly aren't going to get any help until you sort it all out."
+      }
+    ],
+    "submoves": [
+      {
+        "title": "Starting Moves",
+        "description": "You get all the basic moves, Deal with the Agency plus three other Professional moves."
+      }
+    ]
+  },
+  {
+    "id": "p1",
+    "title": "Bottle It Up",
+    "description": "If you want, you can take up to +3 bonus when you **act under pressure**. For each +1 you use, the Keeper holds 1. That hold can be spent later—one for one—to give you -1 on any move except **act under pressure**.",
+    "tracks": [
+      {
+        "name": "Keeper Holds",
+        "max": 3,
+        "shape": "hexagon",
+        "dynamic": true
+      }
+    ]
+  },
+  {
+    "id": "p5",
+    "title": "Unfazeable",
+    "description": "Take +1 Cool (max +3)."
+  },
+  {
+    "id": "p6",
+    "title": "Battlefield Awareness",
+    "description": "You always know what's happening around you, and what to watch out for. Take +1 armour (max 2-armour) on top of whatever you get from your gear."
+  },
+  {
+    "id": "p7",
+    "title": "Leave No One Behind (+Sharp)",
+    "description": "In combat, when you help someone escape, roll +Sharp.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "You get them out clean."
+      },
+      {
+        "range": "7-9",
+        "text": "You can either get them out or suffer no harm, you choose."
+      },
+      {
+        "range": "≤ 6",
+        "text": "You fail to get them out and you've attracted hostile attention."
+      }
+    ]
+  },
+  {
+    "id": "p8",
+    "title": "Tactical Genius",
+    "description": "When you **read a bad situation**, you may roll +Cool instead of +Sharp."
+  },
+  {
+    "id": "p9",
+    "title": "Medic (+Cool)",
+    "description": "You have a full first aid kit, and the training to heal people. When you do first aid, roll +Cool. This move takes the place of regular first aid.",
+    "outcomes": [
+      {
+        "range": "≥ 10",
+        "text": "The patient is stabilized and healed of 2 harm."
+      },
+      {
+        "range": "7-9",
+        "text": "Choose one: heal 2 harm or stabilize the injury."
+      },
+      {
+        "range": "≤ 6",
+        "text": "You cause an extra 1 harm."
+      }
+    ]
+  },
+  {
+    "id": "p10",
+    "title": "Mobility",
+    "description": "You have a truck, van, or car built for monster hunting. Choose two good things and one bad thing about it.",
+    "submoves": [
+      {
+        "title": "Good Things",
+        "description": "Choose two:",
+        "pick": [
+          "Roomy",
+          "Surveillance gear",
+          "Fast",
+          "Stealthy",
+          "Intimidating",
+          "Classic",
+          "Medical kit",
+          "Sleeping space",
+          "Toolkit",
+          "Concealed weapons",
+          "Anonymous",
+          "Armoured (+1 armour inside)",
+          "Tough",
+          "Monster cage"
+        ]
+      },
+      {
+        "title": "Bad Things",
+        "pickOne": [
+          "Loud",
+          "Obvious",
+          "Temperamental",
+          "Beaten-up",
+          "Gas-guzzler",
+          "Uncomfortable",
+          "Slow",
+          "Old"
+        ]
+      }
+    ],
+    "details": true
+  },
+  {
+    "id": "p2",
+    "title": "Gear - Armour",
+    "description": "You get either a flak vest (1-armour hidden) or combat armour (2-armour heavy) for protection.",
+    "weight": -1,
+    "hideCheckbox": true,
+    "pickOne": [
+      "Flak vest (1-armour hidden)",
+      "Combat armour (2-armour heavy)"
+    ]
+  },
+  {
+    "id": "p3",
+    "title": "Gear - Serious Weapons",
+    "description": "You get one serious weapon.",
+    "weight": -1,
+    "hideCheckbox": true,
+    "pickOne": [
+      "Assault rifle (3-harm far area loud reload)",
+      "Grenade launcher (4-harm far area messy loud reload)",
+      "Sniper rifle (4-harm far)",
+      "Grenades (4-harm close area messy loud)",
+      "Submachine gun (3-harm close area loud reload)"
+    ]
+  },
+  {
+    "id": "p4",
+    "title": "Gear - Normal Weapons",
+    "description": "You get two normal weapons.",
+    "weight": -1,
+    "hideCheckbox": true,
+    "pick": [
+      ".38 revolver (2-harm close reload loud)",
+      "9mm (2-harm close loud)",
+      "Hunting rifle (2-harm far loud)",
+      "Shotgun (3-harm close messy)",
+      "Big knife (1-harm hand)"
+    ]
+  },
+  {
+    "id": "pi",
+    "title": "Improvement",
+    "hideCheckbox": true,
+    "category": "Improvement",
+    "description": "When you have filled all five experience boxes, you level up. Erase the marks and pick from below.",
+    "pick": [
+      "Get +1 Cool (Max +3)",
+      "Get +1 Charm (Max +2)",
+      "Get +1 Sharp (Max +2)",
+      "Get +1 Tough (Max +2)",
+      "Take another Professional move",
+      "Take another Professional move",
+      "Add a new resource tag for your Agency or change a red tape tag",
+      "Get command of an Agency team of monster hunters",
+      "Take a move from another playbook",
+      "Take a move from another playbook"
+    ],
+    "details": true
+  },
+  {
+    "id": "pai",
+    "title": "Advanced Improvements",
+    "hideCheckbox": true,
+    "category": "Improvement",
+    "description": "After you have leveled up *five* times, you additionally qualify for advanced improvements.",
+    "pick": [
+      "Get +1 to any rating (Max +3)",
+      "Change this hunter to a new type",
+      "Create a second hunter to play as well as this one",
+      "Mark two of the basic moves as advanced",
+      "Mark another two of the basic moves as advanced",
+      "Retire this hunter to safety",
+      "Get some or all of the other players' hunters hired by your agency. They get the deal with the agency move, as well as salary and benefits",
+      "Get back one used Luck point"
+    ],
+    "details": true,
+    "submoves": [
+      {
+        "title": "Advanced Moves",
+        "pick": [
+          "Kick Some Ass",
+          "Act Under Pressure",
+          "Help Out",
+          "Investigate A Mystery",
+          "Manipulate Someone",
+          "Protect Someone",
+          "Read A Bad Situation",
+          "Use Magic"
+        ]
+      }
+    ]
+  }
+]

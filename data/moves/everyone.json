@@ -1,13 +1,428 @@
 [
   {
-    "id": "universal",
-    "title": "Universal Access - Available to all characters",
-    "description": "This demonstrates the Everyone role functionality - this move appears for any selected role combination.",
+    "id": "e1",
+    "title": "Get a move from another playbook (Requires Improvement)",
+    "description": "Mark this move when you take the respective Improvement.",
+    "multiple": 2,
+    "weight": 4,
+    "takeFrom": ["*"],
+    "takeCategory": ["Moves"]
+  },
+  {
+    "id": "kick",
+    "title": "Kick Some Ass (+Tough)",
+    "hideCheckbox": true,
+    "description": "When you get into a fight and kick some ass, roll +Tough.",
+    "category": "Basic Moves",
     "outcomes": [
-      {
-        "range": "",
-        "text": "This move is always available to demonstrate how the Everyone system works."
-      }
+        {
+            "range": "7-9",
+            "text": "You and whatever you're fighting inflict harm on each other. The amount of harm is based on the established dangers in the game. That usually means you inflict the harm rating of your weapon and your enemy inflicts their attack's harm rating on you."
+        },
+        {
+            "range": "10+",
+            "text": "Choose one extra effect",
+            "bullets": [
+                "You gain the advantage: take +1 forward, or give +1 forward to another hunter.",
+                "You inflict terrible harm (+1 harm)",
+                "You suffer less harm (-1 harm)",
+                "You force them where you want them"
+            ]
+        }
+    ],
+    "submoves": [
+        {
+            "title": "Advanced",
+            "outcomes": [
+                {
+                    "range": "12+",
+                    "text": "Instead pick:",
+                    "bullets": [
+                        "You completely hold the advantage. All hunters involved in the fight get +1 forward.",
+                        "You suffer no harm at all.",
+                        "Your attack inflicts double the normal harm.",
+                        "Your attack drives the enemy away in a rout"
+                    ]
+                }
+            ]
+        }
+    ]
+  },
+  {
+    "id": "act-pressure",
+    "title": "Act Under Pressure (+Cool)",
+    "hideCheckbox": true,
+    "description": "When you act under pressure, roll +Cool.",
+    "category": "Basic Moves",
+    "outcomes": [
+        {
+            "range": "≥ 10",
+            "text": "You do what you set out to."
+        },
+        {
+            "range": "7-9",
+            "text": "The Keeper is going to give you a worse outcome, hard choice, or price to pay."
+        }
+    ],
+    "submoves": [
+        {
+            "title": "Advanced",
+            "outcomes": [
+                {
+                    "range": "12+",
+                    "text": "You may choose to either do what you wanted and something extra, or to do what you wanted to absolute perfection."
+                }
+            ]
+        }
+    ]
+  },
+  {
+    "id": "help-out",
+    "title": "Help Out (+Cool)",
+    "hideCheckbox": true,
+    "description": "When you help another hunter, roll +Cool.",
+    "category": "Basic Moves",
+    "outcomes": [
+        {
+            "range": "≥ 10",
+            "text": "Your help grants them +1 to their roll."
+        },
+        {
+            "range": "7-9",
+            "text": "Your help grants them +1 to their roll, but you also expose yourself to trouble or danger."
+        }
+    ],
+    "submoves": [
+        {
+            "title": "Advanced",
+            "outcomes": [
+                {
+                    "range": "12+",
+                    "text": "Your help lets them act as if they just rolled a 12, regardless of what they actually got."
+                }
+            ]
+        }
+    ]
+  },
+  {
+    "id": "investigate",
+    "title": "Investigate A Mystery (+Sharp)",
+    "hideCheckbox": true,
+    "description": "When you investigate a mystery, roll +Sharp.",
+    "category": "Basic Moves",
+    "tracks": [
+        {
+            "name": "Hold",
+            "max": 2,
+            "shape": "hexagon"
+        }
+    ],
+    "outcomes": [
+        {
+            "range": "≥ 10",
+            "text": "Hold 2. One hold can be spent to ask the Keeper one of the following questions:",
+            "bullets": [
+                "What happened here?",
+                "What sort of creature is it?",
+                "What can it do?",
+                "What can hurt it?",
+                "Where did it go?",
+                "What was it going to do?",
+                "What is being concealed here?"
+            ]
+        },
+        {
+            "range": "7-9",
+            "text": "Hold 1."
+        }
+    ],
+    "submoves": [
+        {
+            "title": "Advanced",
+            "outcomes": [
+                {
+                    "range": "12+",
+                    "text": "You may ask the Keeper any question you want about the mystery, not just the listed ones."
+                }
+            ]
+        }
+    ]
+  },
+  {
+    "id": "manipulate",
+    "title": "Manipulate Someone (+Charm)",
+    "hideCheckbox": true,
+    "description": "Once you have given them a reason, tell them what you want them to do and roll +Charm.\n\nMonsters and minions cannot normally be manipulated.",
+    "category": "Basic Moves",
+    "submoves": [
+        {
+            "title": "Manipulate a Person",
+            "outcomes": [
+                {
+                    "range": "≥ 10",
+                    "text": "They'll do it for the reason you gave them. If you asked too much, they'll tell you the minimum it would take for them to do it (or if there's no way they'd do it)."
+                },
+                {
+                    "range": "7-9",
+                    "text": "They'll do it, but only if you do something for them right now to show that you mean it. If you asked too much, they'll tell you what, if anything, it would take for them to do it."
+                },
+                {
+                    "range": "Advanced 12+",
+                    "text": "Not only do they do what you want right now, they also become your **ally** for the rest of the mystery (or, if you do enough for them, permanently)."
+                }
+            ]
+        },
+        {
+            "title": "Manipulate a Hunter",
+            "outcomes": [
+                {
+                    "range": "≥ 10",
+                    "text": "If they do what you ask they mark experience and get +1 forward."
+                },
+                {
+                    "range": "7-9",
+                    "text": "They mark experience if they do what you ask."
+                },
+                {
+                    "range": "≤ 6",
+                    "text": "It's up to that hunter to decide how badly you offend or annoy them. They mark experience if they decide not to do what you asked."
+                },
+                {
+                    "range": "Advanced 12+",
+                    "text": "They must **Act under pressure** to resist your request. If they do what you ask, they mark one experience and take +1 ongoing while doing what you asked."
+                }
+            ]
+        }
+    ]
+  },
+  {
+    "id": "protect",
+    "title": "Protect Someone (+Tough)",
+    "hideCheckbox": true,
+    "description": "When you prevent harm to another character, roll +Tough.",
+    "category": "Basic Moves",
+    "outcomes": [
+        {
+            "range": "≥ 7",
+            "text": "You protect them okay, but you'll suffer some or all of the harm they were going to get."
+        },
+        {
+            "range": "≥ 10",
+            "text": "Choose an extra:",
+            "bullets": [
+                "You suffer little harm (-1 harm)",
+                "All impending danger is now focused on you",
+                "You inflict harm on the enemy",
+                "You hold the enemy back"
+            ]
+        }
+    ],
+    "submoves": [
+        {
+            "title": "Advanced",
+            "outcomes": [
+                {
+                    "range": "12+",
+                    "text": "Both you and the character you are protecting are unharmed and out of danger. If you were protecting a bystander, they also become your ally."
+                }
+            ]
+        }
+    ]
+  },
+  {
+    "id": "read-situation",
+    "title": "Read A Bad Situation (+Sharp)",
+    "hideCheckbox": true,
+    "description": "When you look around and read a bad situation, roll +Sharp.",
+    "category": "Basic Moves",
+        "tracks": [
+        {
+            "name": "Hold",
+            "max": 3,
+            "shape": "hexagon"
+        }
+    ],
+    "outcomes": [
+        {
+            "range": "≥ 10",
+            "text": "Hold 3. One hold can be spent to ask the Keeper one of the following questions:",
+            "bullets": [
+                "What's my best way in?",
+                "What's my best way out?",
+                "Are there any dangers we haven't noticed?",
+                "What's the biggest threat?",
+                "What's most vulnerable to me?",
+                "What's the best way to protect the victims?"
+            ]
+        },
+        {
+            "range": "7-9",
+            "text": "Hold 1."
+        },
+        {
+            "range": "",
+            "text": "If you act on the answers, you get +1 ongoing while the information is relevant."
+        }
+    ],
+    "submoves": [
+        {
+            "title": "Advanced",
+            "outcomes": [
+                {
+                    "range": "12+",
+                    "text": "You may ask the Keeper any question you want about the situation, not just the listed ones."
+                }
+            ]
+        }
+    ]
+  },
+  {
+    "id": "magic",
+    "title": "Use Magic (+Weird)",
+    "description": "When you use magic, say what you're trying to achieve and how you do the spell, then roll +Weird.",
+    "category": "Basic Moves",
+    "hideCheckbox": true,
+    "outcomes": [
+        {
+            "range": "≥ 10",
+            "text": "The magic works without issues: choose your effect.",
+            "bullets": [
+                "Inflict harm (1-harm ignore-armour magic obvious).",
+                "Enchant a weapon. It gets +1 harm and +magic.",
+                "Do one thing that is beyond human limitations.",
+                "Bar a place or portal to a specific person or a type of creature.",
+                "Trap a specific person, minion, or monster.",
+                "Banish a spirit or curse from the person, object, or place it inhabits.",
+                "Summon a monster into the world.",
+                "Communicate with something that you do not share a language with.",
+                "Observe another place or time.",
+                "Heal 1-harm from an injury, or cure a disease, or neutralize a poison."
+            ]
+        },
+        {
+            "range": "7-9",
+            "text": "It works imperfectly: choose your effect and a glitch. The Keeper will decide what effect the glitch has",
+            "bullets": [
+                "The effect is weakened.",
+                "The effect is of short duration.",
+                "You take 1-harm ignore-armour.",
+                "The magic draws immediate, unwelcome attention.",
+                "It has a problematic side effect. The Keeper may say that...",
+                "The spell requires weird materials.",
+                "The spell will take 10 seconds, 30 seconds, or 1 minute to cast.",
+                "The spell requires ritual chanting and gestures.",
+                "The spell requires you to draw arcane symbols.",
+                "You need one or two people to help cast the spell.",
+                "You need to refer to a tome of magic for the details"
+            ]
+        }
+    ],
+    "submoves": [
+        {
+            "title": "Advanced",
+            "outcomes": [
+                {
+                    "range": "12+",
+                    "text": "The Keeper will offer you some added benefit."
+                }
+            ]
+        }
+    ]
+  },
+  {
+    "id": "big-magic",
+    "title": "Big Magic",
+    "hideCheckbox": true,
+    "description": "Use this when you want more than the Use Magic effects. Tell the Keeper what you want to do.\n\nThe Keeper may require:",
+    "category": "Basic Moves",
+    "outcomes": [
+        {
+            "range": "",
+            "text": "If you meet the requirements, then the magic takes effect.",
+            "bullets": [
+                "You need to spend a lot of time (days or weeks) researching the magic ritual.",
+                "You need to experiment with the spell – there will be lots of failures before you get it right.",
+                "You need some rare and weird ingredients and supplies.",
+                "The spell will take a long time (hours or days) to cast.",
+                "You need a lot of people (2, 3, 7, 13, or more) to help.",
+                "The spell needs to be cast at a particular place and/or time.",
+                "You need to use magic as part of the ritual, perhaps to summon a monster, communicate with something, or bar the portal you opened.",
+                "It will have a specific side-effect or danger."
+            ]
+        }
+    ],
+    "details": true
+  },
+  {
+    "id": "harm-rules",
+    "title": "Harm",
+    "hideCheckbox": true,
+    "description": "Whenever you suffer harm, the Keeper will tell you what effect it has.\n\nInjury severity depends on how much harm you have suffered:",
+    "category": "Basic Moves",
+    "outcomes": [
+        {
+            "range": "",
+            "text": "",
+            "bullets": [
+                "0-harm wounds have only minor, short term effects.",
+                "4-7 harm wounds are serious and unstable. They will get worse unless treated. Mark the \"Unstable\" box.",
+                "8-harm or more will kill a normal human, including a hunter."
+            ]
+        },
+        {
+            "range": "",
+            "text": "Armour reduces the harm suffered by the number of points it is rated for.\n\nMonsters may not be defeated until you use their weakness against them, and this applies to some minions as well."
+        }
+    ]
+  },
+  {
+    "id": "recovery",
+    "title": "Recovery",
+    "hideCheckbox": true,
+    "description": "Healing from wounds:",
+    "category": "Basic Moves",
+    "outcomes": [
+        {
+            "range": "",
+            "text": "",
+            "bullets": [
+                "0 harm wounds are considered healed right away.",
+                "1-3 harm wounds improve when you receive first aid, and later when you rest. Heal 1 when you do.",
+                "Unstable wounds require first aid to become stable. While unstable, they may get worse.",
+                "4+ harm wounds require a healing move, time in an infirmary or hospital, or magical healing."
+            ]
+        },
+        {
+            "range": "",
+            "text": "At the end of the mystery, you also have a chance to heal:",
+            "bullets": [
+                "If there is no chance to rest, heal 1 harm.",
+                "If there is plenty of time, heal all harm."
+            ]
+        }
+    ]
+  },
+  {
+    "id": "end-of-session",
+    "title": "End of Session",
+    "hideCheckbox": true,
+    "description": "At the end of each session, the Keeper will ask the following questions:",
+    "category": "Basic Moves",
+    "outcomes": [
+        {
+            "range": "",
+            "text": "",
+            "bullets": [
+                "Did we conclude the current mystery?",
+                "Did we save someone from certain death (or worse)?",
+                "Did we learn something new and important about the world?",
+                "Did we learn something new and important about one of the hunters?"
+            ]
+        },
+        {
+            "range": "",
+            "text": "If you get one or two \"Yes\" answers, mark one experience. If you get three or four, mark two."
+        }
     ]
   },
   {

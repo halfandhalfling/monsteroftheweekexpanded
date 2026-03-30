@@ -28,16 +28,7 @@ window.CardInitializers.history = function(container, suffix) {
             'This hunter is your moral compass. When you talk over things with them, their advice keeps you on the straight and narrow.',
             'You\'re powerfully attracted to this hunter. Maybe someday you\'ll deserve them.'
          ],
-        'The Curse-Eater': [
-            'You\'re friends and confidants. What do you know about each other\'s fears and secrets?',
-            'You saved them from a curse many years ago and have trusted each other since. Ask them what it was.',
-            'You\'re suspicious of their powers and wonder if one day you\'ll need to consume a curse from them.',
-            'They\'re suspicious of your powers. Ask them what they fear about you.',
-            'You were both hunting the same monster and had an argument about killing it versus saving it. Decide between you who won that debate.',
-            'You\'re family. What\’s the relationship? How does the rest of the family regard you?',
-            'On your first hunt together, you unleashed consumed magic and put them in great danger. Ask what happened and how they feel about it now.',
-            'They told you that you\’re fated to consume a curse that threatens the world. Ask if they know anything more about what\’s coming.'
-        ],
+        
         'The Divine': [
             'If you are protecting another hunter as your mission, tell them this: You have a crucial role in what is to come. I am here to guide and defend you.',
             'They should not be involved in this situation: the prophecies didn\'t mention them at all. This gets your attention but you don\'t know what it means yet.',
@@ -137,16 +128,6 @@ window.CardInitializers.history = function(container, suffix) {
             'You\'ve known each other some time, but since your powers manifested, you keep them at a distance emotionally.',
             'You hope they can help you control your powers.',
             'They saw you use your powers for selfish or vindictive reasons. Ask them who the victim was, and then tell them what you did.'
-        ],
-        'The Visitor': [
-            'They were the first local resident you ever had a conversation with. Was there a language barrier? What was the conversation about?',
-            'This hunter seems to know things about the history of your homeland you only vaguely know about.',
-            'Tests indicate that one of their ancestors was from your people. Did you know this was possible? Have you told them?',
-            'You frequently have deep conversations with this hunter about your respective cultures.',
-            'It especially bothers you to be misunderstood by this hunter. You don\’t understand why. Ask them if they\’ve noticed.',
-            'One of the hunters has had a past experience with your people. Ask them whether it was a good experience or a bad one? Were you there?',
-            'How have you and this hunter shared hobbies from each other\’s upbringings?',
-            'One of you mistook the other for a threat people needed to be protected from. Decide together how that played out.'
         ],
         'The Wronged': [
             'They helped you at a critical point in your quest for revenge. Tell them what you needed help with.',
